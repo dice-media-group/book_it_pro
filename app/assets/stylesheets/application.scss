@@ -8,6 +8,10 @@
 @import "jumpstart/sticky-footer";
 @import "jumpstart/announcements";
 
+@import "simple_calendar";
+
+@import "meetings";
+
 // Fixes bootstrap nav-brand container overlap
 @include media-breakpoint-down(xs) {
   .container {

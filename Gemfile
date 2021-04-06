@@ -73,3 +73,7 @@ gem 'redis', '~> 4.2', '>= 4.2.2'
 gem 'sidekiq', '~> 6.1'
 gem 'sitemap_generator', '~> 6.1', '>= 6.1.2'
 gem 'whenever', require: false
+
+# custom
+gem 'simple_calendar', '~> 2.4', '>= 2.4.2'
+gem 'stripe', '~> 5.32', '>= 5.32.1'
