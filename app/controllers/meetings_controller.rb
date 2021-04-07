@@ -3,7 +3,7 @@ class MeetingsController < ApplicationController
 
   # GET /meetings or /meetings.json
   def index
-    @meetings = current_user.meetings.all
+    @meetings = current_or_guest_user.meetings.all
   end
 
   # GET /meetings/1 or /meetings/1.json
@@ -12,7 +12,7 @@ class MeetingsController < ApplicationController
 
   # GET /meetings/new
   def new
-    @meeting = Meeting.new
+    @meeting = current_or_guest_user.meetings.new
   end
 
   # GET /meetings/1/edit
@@ -21,7 +21,7 @@ class MeetingsController < ApplicationController
 
   # POST /meetings or /meetings.json
   def create
-    @meeting = Meeting.new(meeting_params)
+    @meeting = current_or_guest_user.meetings.new(meeting_params)
 
     respond_to do |format|
       if @meeting.save
@@ -59,7 +59,7 @@ class MeetingsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_meeting
-      @meeting = Meeting.find(params[:id])
+      @meeting = current_or_guest_user.meetings.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.

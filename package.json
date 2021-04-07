@@ -12,6 +12,7 @@
     "jquery": "^3.6.0",
     "local-time": "^2.1.0",
     "popper.js": "^1.16.1",
+    "tailwindcss": "^2.1.1",
     "turbolinks": "^5.2.0",
     "vue": "^2.6.12",
     "vue-loader": "^15.9.6",
@@ -19,6 +20,7 @@
   },
   "version": "0.1.0",
   "devDependencies": {
+    "postcss": "^8.2.9",
     "webpack-dev-server": "^3.11.2"
   }
 }

@@ -77,3 +77,4 @@ gem 'whenever', require: false
 # custom
 gem 'simple_calendar', '~> 2.4', '>= 2.4.2'
 gem 'stripe', '~> 5.32', '>= 5.32.1'
+gem 'devise-guests', '~> 0.7.0'

@@ -9,6 +9,9 @@ require("@rails/activestorage").start()
 require("channels")
 require("local-time").start()
 
+// tailwind css
+require("stylesheets/application.scss")
+
 window.Rails = Rails
 
 import 'bootstrap'

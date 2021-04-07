@@ -23,4 +23,9 @@ module ApplicationHelper
       "#{base_url}/00000000000000000000000000000000#{base_url_params}"
     end
   end
+
+  def readable_time(time)
+    time.strftime("%b %d, %I:%M%P")
+  end
+
 end
